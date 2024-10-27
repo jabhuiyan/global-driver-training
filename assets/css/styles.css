@@ -410,6 +410,7 @@ footer {
   nav {
     padding: 1.5rem 1rem;
   }
+
   nav ul {
     position: fixed;
     background-color: var(--bg-color);
@@ -435,19 +436,28 @@ footer {
   }
 
   .hero {
-    margin-top: -4rem;
+    margin-top: 1rem;
+    display: flex;
     flex-direction: column;
-    gap: 0;
+    align-items: center; /* Center-aligns content */
+    gap: 1rem;
+    padding: 1rem;
   }
 
   .hero img {
-    height: 30rem;
-    width: 37rem;
+    max-width: 90%; /* Keeps the image responsive */
+    height: auto; /* Prevents stretching */
+    margin-bottom: 1rem; /* Adds space below the image */
   }
 
   .bio {
-    margin-top: -1rem;
-    width: 20.5rem;
+    text-align: center;
+    width: 90%;
+    margin-top: 0; /* Adjusted to prevent overlap */
+  }
+
+  .bio-title {
+    margin-top: 1rem; /* Adds space above the title */
   }
 
   .more-about {
@@ -487,6 +497,7 @@ footer {
     max-width: 23.75rem;
   }
 }
+
 
 @media screen and (max-width: 420px) {
   .hero img {
